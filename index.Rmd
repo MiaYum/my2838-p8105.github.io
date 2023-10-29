@@ -29,4 +29,6 @@ This is what mzw done for meal.
 
 ![](images/dishes.jpeg)
 
-You can also use R
+# Other stuff on this page
+
+Definitely there is [plotly](plotly.html) stuff!

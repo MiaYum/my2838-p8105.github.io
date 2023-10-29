@@ -13,7 +13,7 @@ We're making interactive plots
 ```{r}
 library(tidyverse)
 library(plotly)
-
+library(ggplot2)
 library(p8105.datasets)
 ```
 
@@ -66,3 +66,15 @@ nyc_airbnb |>
     type = "bar", colors = "viridis")
 ```
 
+## ggplotly
+
+ggplot scatterplot, it exsits, but with low quality. So don't do so.
+
+```{r}
+ggp_scatter = 
+  nyc_airbnb |>
+  ggplot(aes(x = lat, y = long, color = price)) +
+  geom_point(alpha = .5)
+
+ggplotly(ggp_scatter)
+```
